@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Fake News Detector</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <!-- Latest compiled and minified JavaScript -->
+        
+    </head>
+    <body>
+        <div class ="heading">The Times</div>
+        <div class="container-main row">
+            <div class="image-container col-md-4 image">
+
+            </div>
+            <div class="content-container col-md-8">
+                <p id="title">
+                </p>
+                <div class="date">1st April 2050</div>
+                <p id= "description">
+                </p>
+            </div>
+            <div id="popup">
+                <p id="ptext">Great Job!</p>
+                <div class="read"><button class="btn" id="read">Read full article..</button></div>
+                <div class="cont"><button class="btn" id="cont">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div class="row button-container">
+            <div class="col-lg-4 goVR">
+                <button type="button" class="btn but btn-lg" id="VR" onclick="window.location.href='new2.html'">Go VR</button>
+            </div>
+            <div class="col-lg-4 real">
+                <button type="button" class="btn but btn-lg" id="real">Real</button>
+            </div>
+            <div class="col-lg-4 fake">
+                <button type="button" class="btn but btn-lg" id="fake">Fake</button>
+            </div>
+            <div class="stats"><button type="button" class="btn but btn-lg" id="gen">Generate Stats</button></div>
+        </div>
+        <div class="begin"><p id="start">Start</p></div>
+        <a href="#plotter" ><div class="more">Details</div></a>
+        <div class="avg"><p id="score"></p></div>
+        <a name="plotter"><div id="graph"></div></a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="jquery-3.2.1.js"></script>
+        <script src="main.js"></script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="jquery.localscroll.js" type="text/javascript"></script> 
+        <script src="jquery.scrollTo.js" type="text/javascript"></script> 
+    </body>
+</html>

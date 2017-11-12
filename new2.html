@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+
+  </head>
+  <body>    
+    <a-scene>
+                 
+             
+    <a-box position="3 1 -3" color="yellowgreen"  height="7" width="7"event-set__mouseenter="material.src:banana2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="6 -1 3" color="yellowgreen"  height="5" width="5" rotation="45 90 0"event-set__mouseenter="material.src:clown2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="10 15 -7" color="yellowgreen"  height="6" width="6" rotation="90 90 0"event-set__mouseenter="material.src:donald_trump_narco2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="7 -4 15" color="yellowgreen"  height="7" width="7" rotation="45 45 0"event-set__mouseenter="material.src:ivanka2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="20 5 20" color="yellowgreen"  height="15" width="15" rotation="45 45 0"event-set__mouseenter="material.src:justin2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="15 2 40" color="yellowgreen"  height="10" width="10" rotation="45 45 0"event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="-40 -1 20" color="yellowgreen"  height="10" width="10" rotation="0 90 45"event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="-20 -3 60" color="yellowgreen"  height="20" width="20" rotation="30 30 0"event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="-60 1 60" color="yellowgreen"  height="30" width="30" rotation="0 0 90"event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+        
+    <a-box position="-60 1 -100" color="yellowgreen"  height="50" width="50" event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+     <a-box position="-80 1 -10" color="yellowgreen"  height="30" width="30" rotation=" 45 90 0"event-set__mouseenter="material.src:dino2.png" event-set__mouseleave="material.src:blue.png"></a-box>
+        
+       <!-- <a-box position="0 3.5 -2" rotation="30 30 0" color="skyblue"
+             event-set__enter="_event: mouseenter; material.color: yellowgreen; scale: 3 1 1"
+             event-set__leave="_event: mouseleave; material.color: skyblue; scale: 1 1 1">
+        <a-animation attribute="rotation" begin="click" dur="500" fill="backwards" to="30 30 360"></a-animation>
+      </a-box>-->
+        
+        <a-entity position="0 1.8 4">
+        <a-entity camera look-controls mouse-cursor>
+          <a-cursor fuse="true" color="black"></a-cursor>
+        </a-entity>
+      </a-entity>
+        
+        
+       <!-- <a-plane position="0 -1s -4" rotation="-90 0 0" width="5" height="10" color="lightgreen"></a-plane>-->
+        
+        <!--<a-entity text="width: 5; color: black; value: Fake News Detector" position="1 2.5 -2"></a-entity>
+        
+        <a-entity text="width: 5; color: black; value: Hoover over a box to begin" position="2.5 3 -2" ></a-entity>-->
+        
+      <a-sky src="fake-news2.jpg"></a-sky>
+    </a-scene>
+      
+      <script>
+      document.querySelector('a-box').addEventListener('click', function (evt) {
+  console.log('This A-Frame entity was clicked!');
+});
+      </script>
+  </body>
+</html> 
